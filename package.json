@@ -11,5 +11,8 @@
   "dependencies": {
     "concurrently": "^3.5.1",
     "json-server": "^0.12.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3"
   }
 }
