@@ -24,7 +24,7 @@ class App extends Component {
     this.state.form.forEach(field => {
       if (field.type === "text") {
         fieldResult.push(
-        <div key = {field.id}>
+        <div key = {field.id}  className="input">
           <i className = {"fa " + field.icon}/> <input type = {field.type} placeholder={field.label}/>
         </div>
         )
@@ -32,14 +32,15 @@ class App extends Component {
   
       } else if (field.type === "email") {
         fieldResult.push(
-          <div key = {field.id}>
+          <div key = {field.id} className="input">
+          {/* add icon here */}
           <i className = {"fa " + field.icon} /><input type = {field.type} placeholder={field.label}/>
         </div>)
 
 
       } else if (field.type === "select"){
         fieldResult.push(
-            <select key={field.id}>
+            <select key={field.id}  className="input">
               <option value= "lang">Select Language</option>
               {field.options.map((opt, i) => {
                 return <option key={'opt' + i} value={opt.value}>{opt.label}</option>
@@ -49,13 +50,13 @@ class App extends Component {
 
       )} else if (field.type === "textarea") {
         fieldResult.push( 
-        <div key = {field.id}>
-          <i className = {"fa " + field.icon} /><input type = {field.type} placeholder={field.label}/>
+        <div key = {field.id} className="input2">
+          <i id= "text-icon" className = {"fa " + field.icon} /><textarea name = {field.type} placeholder={field.label}/>
         </div>)
 
       } else if (field.type === "tel") {
         fieldResult.push(
-        <div key = {field.id}>
+        <div key = {field.id}  className="input">
           <i className = {"fa " + field.icon} /><input type = {field.type} placeholder={field.label}/>
         </div>
         )

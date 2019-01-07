@@ -18,19 +18,25 @@ h1 {
     color: gray;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: lightblue;
+    border-radius: 4px;
     
 
 }
 input {
-    height: 30px;
-    width: 80%;
-    margin: 30px 30px 30px 0px;
-    align-content: center;
-    padding: 3px;
-    color: gray;
     font-size: 13px;
-    
+    border: none;
+    outline: none;
+    padding: 9px;
 }
+
+.input .i {
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+
 
 i {
     color: lightslategray;
@@ -41,11 +47,14 @@ i {
 
 select {
     height: 30px;
-    width: 89%;
-    margin: 30px 30px 30px 30px;
+    width: 640px;
     align-content: center;
     color: gray;
 
+}
+
+select .input {
+    padding: 0px;
 }
 
 button {
@@ -55,6 +64,38 @@ button {
     color: gray;
     font-size: 20px;
     margin: 25px;
+    border-radius: 4px;
 }
 
+.input2 {
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    height: 80px;
 
+}
+
+#text-icon {
+    font-size: 15px;
+    position: relative;
+    top: -14px;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    width: 500px;
+}
+
+div .input {
+    border: 1px solid gray;
+    height: 35px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    margin-top: 0px;
+}
